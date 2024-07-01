@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .action-button {
+        @apply py-1 px-1.5 flex items-center text-sm font-normal hover:bg-gray-300 hover:rounded-md bg-gray-100 rounded-md space-x-1
+    }
+    .body-content {
+        @apply border border-gray-100 p-2 border-l-blue-300 border-l-4 rounded-md
+    }
+    .input-text {
+        @apply w-full bg-transparent border border-gray-400 rounded-sm px-2 py-1 hover:border-gray-600 dark:text-white uppercase disabled:bg-gray-200 text-sm bg-white
+    }
+    .table-header {
+        @apply text-xs text-gray-500 px-1 font-extrabold text-left py-2
+    }
+    .table-body {
+        @apply transition duration-300 ease-in-out hover:bg-gray-100
+    }
+    .table-body-td {
+        @apply px-1 py-2 whitespace-nowrap text-sm text-gray-900
+    }
+    .action-button {
+        @apply py-1 px-1.5 flex items-center text-sm font-normal hover:bg-gray-300 hover:rounded-md bg-gray-100 rounded-md space-x-1
+    }
+}
